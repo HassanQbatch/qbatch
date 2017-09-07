@@ -1,8 +1,11 @@
-<div class="helloDiv">
+<div style="text-align: center;">
 <br><br>
-<p style="color: #149077; opacity: 0.5; font-family: sans-serif; font-weight: lighter; font-size: 25px;">We would love to hear from you!</p>
 
-<%= button_tag "Say Hello :)", class: "helloButton" %>
+<p>We would love to hear from you!</p>
+
+<%= link_to new_message_path, class: "btn btn-info btn-lg" do %>
+	<i class="glyphicon glyphicon-chevron-right"></i> Say Hello :)
+<% end %>
 
 <br><br>
 
